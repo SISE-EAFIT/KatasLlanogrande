@@ -1,0 +1,23 @@
+\begin{frame}[fragile]
+   \frametitle{Manipulacion de pixeles (Thresholding)}
+
+   Convertir a gris:
+
+    \scriptsize
+
+    \begin{lstlisting}
+Mat convertGray(Mat &color){
+
+    Mat gray; gray.create(color.rows, color.cols, CV_8UC1);
+    cvtColor(color, gray, CV_BGR2GRAY);
+
+    namedWindow("Gray image", CV_WINDOW_AUTOSIZE);
+    imshow("Gray image", gray);
+
+    return gray;
+
+}
+
+    \end{lstlisting}
+
+\end{frame}
