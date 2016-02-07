@@ -1,0 +1,29 @@
+\begin{frame}[fragile]
+   \frametitle{Cambiar medida}
+
+        En este ejemplo se necesitan 3 modulos de OpenCv
+
+        \begin{enumerate}
+            \item Core para poder leer la imagen
+            \item Highgui para poder mostrarla
+            \item Imgproc para poder modificarla
+        \end{enumerate}
+
+        \vspace{1cm}
+
+        En Codigo se ve asi:
+
+        \lstset{ morecomment=[l][\color{blue}]{\#} }
+        \begin{lstlisting}
+    #include "opencv2/highgui/highgui.hpp"
+    #include "opencv2/core/core.hpp"
+    #include "opencv2/imgproc/imgproc.hpp"
+        \end{lstlisting}
+
+        Adicionalmente se debe usar el namespace o espacio de nombre de OpenCv:
+
+        \lstset{ morecomment=[l][\color{blue}]{using} }
+        \begin{lstlisting}
+    using namepace cv;
+        \end{lstlisting}
+\end{frame}
