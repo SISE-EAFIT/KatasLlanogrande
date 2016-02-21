@@ -1,0 +1,14 @@
+\begin{frame}[fragile]
+  \frametitle{Clases y objetos}
+  
+  \begin{itemize}
+  \item{Ejemplo:}
+  \end{itemize}
+  
+  
+  \begin{figure}
+    \includegraphics[width=0.6\textwidth]{Imagenes/EjmH.png}
+    % \caption{\label{fig:EjmH}Esta funci\'on imprime los dos parametros ingresados.}
+  \end{figure}
+  
+\end{frame}
