@@ -1,0 +1,34 @@
+\begin{frame}[fragile]
+   \frametitle{Manipulacion de pixeles (Thresholding)}
+
+   Thresholding para color:
+
+    \scriptsize
+
+    \begin{lstlisting}
+Mat thresholdingColor(Mat &image, uchar thresholdValue){
+
+    for(int i=0; i < image.rows; i++){
+        for(int j=0; j<image.cols; j++){
+
+            int sum = image.at<Vec3b>(i,j)[0] +
+                      image.at<Vec3b>(i,j)[1] +
+                      image.at<Vec3b>(i,j)[2];
+
+            uchar average = sum/3;
+
+            if(average > thresholdValue){
+
+                image.at<Vec3b>(i,j)[0] = 255;
+                image.at<Vec3b>(i,j)[1] = 255;
+                image.at<Vec3b>(i,j)[2] = 255;
+
+            }
+        }
+    }
+
+    return image;
+}
+    \end{lstlisting}
+
+\end{frame}

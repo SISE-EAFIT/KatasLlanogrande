@@ -1,0 +1,25 @@
+\begin{frame}[fragile]
+   \frametitle{Manipulacion de pixeles (Thresholding)}
+
+   Thresholding para grises:
+
+    \scriptsize
+
+    \begin{lstlisting}
+Mat thresholdingGray(Mat &image, uchar thresholdValue){
+
+    for(int i=0; i < image.rows; i++){
+        for(int j=0; j<image.cols; j++){
+
+            uchar value = image.at<uchar>(i,j);
+            if(value > thresholdValue) image.at<uchar>(i,j)=255;
+
+        }
+    }
+
+    return image;
+}
+
+    \end{lstlisting}
+
+\end{frame}

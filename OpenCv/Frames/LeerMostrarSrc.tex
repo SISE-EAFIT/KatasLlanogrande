@@ -1,0 +1,21 @@
+\begin{frame}[fragile]
+   \frametitle{Leer y mostrar una imagen}
+
+    Por ultimo esta el codigo fuente:
+
+    \scriptsize
+
+    \begin{lstlisting}
+int main(int argc, char *argv[]){
+
+    Mat image = imread( /* ruta de la imagen */ );
+    namedWindow( "Window", CV_WINDOW_AUTOSIZE );
+    imshow( "Window", image );
+    waitKey(0);
+
+    return 0;
+
+}
+    \end{lstlisting}
+
+\end{frame}

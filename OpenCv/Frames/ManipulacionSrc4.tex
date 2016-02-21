@@ -1,0 +1,35 @@
+\begin{frame}[fragile]
+   \frametitle{Manipulacion de pixeles (Thresholding)}
+
+   Main:
+
+    \tiny
+
+    \begin{lstlisting}
+int main(int argc, char *argv[]){
+
+    Mat color = imread( /* ruta de la imagen */ );
+
+    namedWindow("Normal image", CV_WINDOW_AUTOSIZE);
+    imshow("Normal image", color);
+
+    Mat gray = convertGray(color);
+
+    Mat colorConverted = thresholdingColor( color, 100 );
+
+    namedWindow("Color image after thresholding", CV_WINDOW_AUTOSIZE);
+    imshow("Color image after thresholding", colorConverted);
+
+    Mat grayConverted = thresholdingGray( gray, 100 );
+
+    namedWindow("Gray image after thresholding", CV_WINDOW_AUTOSIZE);
+    imshow("Gray image after thresholding", grayConverted);
+
+    waitKey(0);
+
+    return 0;
+
+}
+    \end{lstlisting}
+
+\end{frame}
